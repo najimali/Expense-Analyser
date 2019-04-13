@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <ListView
+          android:layout_width="match_parent"
+          android:layout_height="229dp"
+          android:id="@+id/list_view"
+          android:background="#1affa3"></ListView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Income"
+    android:layout_gravity="center_horizontal"
+    android:textSize="25dp"
+    android:textColor="#ff0000"/>
+
+   <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/income_list"
+       android:background="#1affa3"
+       ></ListView>
+   </LinearLayout>
+   <com.github.clans.fab.FloatingActionMenu
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/fab"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentEnd="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="12dp"
+       android:layout_marginBottom="14dp"
+       app:menu_showShadow="true"
+       app:menu_fab_label=""
+       app:menu_openDirection="up"
+       app:menu_backgroundColor="@android:color/transparent"
+       >
+
+      <com.github.clans.fab.FloatingActionButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_label="@string/Add_Income"
+          app:fab_size="mini"
+          android:id="@+id/fam1"
+          android:src="@drawable/add"
+          android:onClick="onClick"
+          />
+
+      <com.github.clans.fab.FloatingActionButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:fab_label="@string/Add_Expense"
+          app:fab_size="mini"
+          android:id="@+id/fam2"
+          android:src="@drawable/add"
+          />
+
+
+   </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>

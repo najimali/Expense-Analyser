@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Expense Analyser</string>
+
+    <string name="Add_Income">Add_Income</string>
+    <string name="Add_Expense">Add_Expense</string>
+
+    <string name="Spinner">Spinner</string>
+    <array name="list">
+        <item>Food</item>
+        <item>Transport</item>
+        <item>Loan</item>
+        <item>Rent</item>
+        <item>Education</item>
+        <item>Household</item>
+        <item>Health</item>
+        <item>Others</item>
+    </array>
+    <array name="Income">
+
+        <item>Income</item>
+
+
+    </array>
+    <array name="Month">
+
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+        <item>Total</item>
+
+    </array>
+
+
+    <string name="AddIncome">Add Income</string>
+    <string name="AddExpense">Add Expense</string>
+    <string name="title_activity_navigation">Expense Analyser</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

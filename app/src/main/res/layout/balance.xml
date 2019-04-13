@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/yellow"
+    >
+
+
+  <Spinner
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/spin"
+      android:layout_marginLeft="20dp"
+      android:entries="@array/Month"
+      android:layout_marginTop="20dp"
+      android:textSize="20dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="20sp"
+      ></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available balance:"
+        android:textSize="20sp"
+        android:id="@+id/text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/spin"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@id/spin"
+        android:layout_alignRight="@+id/text"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="28dp"
+      android:text="Income"
+      android:layout_below="@+id/text"
+      android:layout_alignLeft="@+id/text"
+      android:layout_alignStart="@+id/text"
+
+      />
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Expenses"
+      android:layout_alignBaseline="@+id/textView2"
+      android:layout_alignBottom="@+id/textView2"
+      android:layout_toLeftOf="@+id/text2"
+      android:layout_toStartOf="@+id/text2"
+
+      />
+
+  <TextView
+      android:id="@+id/incometxv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:text="TextView"
+      android:layout_below="@+id/textView2"
+      android:layout_alignLeft="@+id/textView2"
+      android:layout_alignStart="@+id/textView2" />
+
+  <TextView
+      android:id="@+id/expensetxv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="TextView"
+      android:layout_alignBaseline="@+id/incometxv"
+      android:layout_alignBottom="@+id/incometxv"
+      android:layout_alignRight="@+id/textView3"
+      android:layout_alignEnd="@+id/textView3" />
+
+  <TextView
+      android:id="@+id/baltxv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="TextView"
+      android:layout_below="@+id/text"
+      android:layout_toRightOf="@+id/textView2"
+      android:layout_toEndOf="@+id/textView2"
+      android:layout_centerHorizontal="true"
+      />
+
+</RelativeLayout>
